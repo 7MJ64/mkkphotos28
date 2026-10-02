@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mayank | Photography portfolio</title>
+<meta name="description" content="Mayank (@mkk_photos28): sports, street and portrait photography. Football, softball, prom, senior photos and city streets.">
+<meta name="theme-color" content="#0b0d10">
+<meta property="og:title" content="Mayank | Photography portfolio">
+<meta property="og:description" content="Sports, city streets, and portraits. Book Mayank for your next shoot.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📷%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header>
+  <a class="logo" href="#top">Mayank<small>Photography portfolio</small></a>
+  <nav aria-label="Main">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="pill" href="#contact">Book Mayank</a>
+    <button id="theme" type="button" aria-label="Toggle light and dark theme">◐</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="strip" id="strip" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">@mkk_photos28</p>
+      <h1>Welcome to <em>my perspective.</em></h1>
+      <p class="lede">I'm Mayank, a photographer who turns everyday moments into something worth remembering. Sports, city streets, and portraits.</p>
+      <div class="btns"><a class="btn solid" href="#work">See the work</a><a class="btn" href="#contact">Book Mayank</a></div>
+    </div>
+    <span class="scroll" aria-hidden="true">Scroll</span>
+  </section>
+
+  <section id="work" class="wrap">
+    <div class="head"><h2>Work</h2><p>Sports, city streets, and portraits. Select a frame to view it full size.</p></div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section id="about" class="wrap about">
+    <h2>About me</h2>
+    <div class="cols">
+      <div>
+        <p class="big">Hey, I'm Mayank, a photographer who enjoys turning everyday moments into something worth remembering.</p>
+        <p>I'm drawn to the way photography can capture emotion, atmosphere, and details that people might otherwise overlook. For me, photography is a way to explore the world from different perspectives and tell stories without needing words.</p>
+        <p>Whether I'm photographing people, places, nature, or small details, I'm always looking for a unique way to frame the moment. This portfolio is a collection of my work, my creativity, and the moments I've chosen to see through my lens. I hope you're inspired enough to book me as your next photographer.</p>
+      </div>
+      <ul class="facts">
+        <li>Sports<span>Football, softball</span></li>
+        <li>Portraits<span>Prom, senior photos</span></li>
+        <li>Street<span>New York, Washington DC, Seattle, Niagara</span></li>
+        <li>Pricing<span>Personal to each shoot</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap contact">
+    <div>
+      <h2>Contact and pricing</h2>
+      <p class="lede">Pricing is personal to each shoot. Send the date, the place, and what you want captured.</p>
+      <a class="mail" href="mailto:mkkphotos28@gmail.com">mkkphotos28@gmail.com</a>
+      <div class="btns">
+        <a class="btn solid" href="mailto:mkkphotos28@gmail.com">Email Mayank</a>
+        <a class="btn" href="https://www.instagram.com/mkk_photos28" target="_blank" rel="noopener">Message on Instagram</a>
+        <button class="btn" id="copy" type="button">Copy email</button>
+      </div>
+    </div>
+    <form id="book">
+      <label>Your name<input id="f-name" required autocomplete="name"></label>
+      <label>Shoot type<select id="f-type"><option>Portraits (senior, prom)</option><option>Sports</option><option>Street / city</option><option>Something else</option></select></label>
+      <div class="two"><label>Date<input id="f-date" type="date"></label><label>Place<input id="f-place" placeholder="City, field, venue"></label></div>
+      <label>What do you want captured?<textarea id="f-msg" rows="4"></textarea></label>
+      <button class="btn solid" type="submit">Send request by email</button>
+    </form>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Mayank</span><a href="https://www.instagram.com/mkk_photos28" target="_blank" rel="noopener">@mkk_photos28 on Instagram</a></div></footer>
+
+<dialog id="lb" aria-label="Photo viewer">
+  <div class="stage" id="stage"></div>
+  <div class="bar"><button id="prev" type="button">Previous</button><span id="lbcap"></span><button id="next" type="button">Next</button><button id="close" type="button">Close</button></div>
+</dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
